@@ -15,7 +15,7 @@ HTML_PAGE = """
         <button type="submit">Tahmin Üret</button>
     </form>
     {% if numbers %}
-        <h3>Ana Numaralar: {{ numbers }}</h3>
+        <h3>Ana Numaralar: {{ numbers|join(', ') }}</h3>
         <h3>Joker (SuperStar): {{ joker }}</h3>
     {% endif %}
 </body>
